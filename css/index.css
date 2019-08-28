@@ -1,6 +1,21 @@
+*{
+    background-color:#444444;
+}
+
 header{
-    color:aliceblue;
+    color:#ffffff;
+
+
 }
 h1{
-    color:aliceblue;
+    color:#ffffff;
+}
+p{
+    color: #ffffff;
+}
+.projecthouse{
+    box-shadow:5px 5px 5px 5px #000000;
+}
+#logo{
+    text-decoration:  wavy;
 }
