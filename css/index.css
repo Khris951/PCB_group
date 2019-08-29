@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
-*{
-    background-color:#444444;
+
+* {
     margin: 0;
 }
+
 :root{
     --font-color: white;
     font-family: 'Comfortaa', cursive;
@@ -11,33 +12,43 @@ body {
     max-width: 980px;
     margin: auto;
 }
+
+.content {
+    background-color:#444444;
+}
+
 header{
-    color:#ffffff;
+    background-color: #808080;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
 }
 header nav .menu{
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
-    margin:1rem,0rem;
+    margin:1rem 0rem;
     text-transform: uppercase;
     display: flex;
     padding: 0;
     list-style-type: none;
     justify-content: space-around;
+    align-content: center;
 }
+
+header nav .menu li {
+    display: flex;
+    align-items: center;
+}
+
 header nav .menu li a {
     text-decoration: none;
     color: var(--font-color);
     text-transform: uppercase;
-    border: 1px solid transparent;
-    padding: 1px;
 }
 header nav .menu li a:hover {
-    background: #00ff00;
-letter-spacing: 1px;
--webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
--moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
-box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
-transition: all 0.4s ease 0s;
+}
+header nav .menu li a:focus {
+    font-weight: 600;
 }
 @media (min-width: 600px) {
    main .product-list {
@@ -58,7 +69,7 @@ transition: all 0.4s ease 0s;
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-header #logo{
+main #logo{
     background-image: url(..//img/homeexample.jpg);
     background-position: center;
     background-size: cover;
