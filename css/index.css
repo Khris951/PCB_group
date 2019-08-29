@@ -1,21 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 *{
     background-color:#444444;
+    margin: 0;
 }
-
+:root{
+    --font-color: white;
+    font-family: 'Comfortaa', cursive;
+}
+body {
+    max-width: 980px;
+    margin: auto;
+}
 header{
     color:#ffffff;
+}
+header nav .menu{
+    font-family: 'Comfortaa', cursive;
+    font-size: 1rem;
+    margin:1rem,0rem;
+    text-transform: uppercase;
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    justify-content: space-around;
+}
+header nav .menu li a {
+    text-decoration: none;
+    color: var(--font-color);
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 1px;
+}
+header nav .menu li a:hover {
+    background: #00ff00;
+letter-spacing: 1px;
+-webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+-moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+transition: all 0.4s ease 0s;
+}
+@media (min-width: 600px) {
+   main .product-list {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+       grid-gap: 5px;
+   }
+}
 
+@media (min-width: 900px) {
+    main .product-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
+@media (min-width: 980px) {
+    main .product-list {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
-h1{
-    color:#ffffff;
-}
-p{
-    color: #ffffff;
-}
-.projecthouse{
-    box-shadow:5px 5px 5px 5px #000000;
+header #logo{
+    background-image: url(..//img/homeexample.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 #logo{
-    text-decoration:  wavy;
+    font-size: 4rem;
+    color:#444444;
+}
+
+
+
+
+
+
+
+
+
+#largo {
+    display: flex;
+    justify-content: flex-end;
 }

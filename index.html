@@ -10,27 +10,30 @@
 <body>
      <header>
          <nav>
-            <img src="pictures/емблема.png" alt="емблема компанії" width="200" height="100">
-            <ul>
-                <li><a href="#Каталог">Каталог</a></li>
-                <li><a href="#Технологія">Технологія</a></li>
-                <li><a href="#Розрахунок_вартості">Розрахунок вартості</a></li>
-                <li><a href="#Контакти">Контакти</a></li>
+            <img src="pictures/emblem.png" alt="емблема компанії" width="200" height="100">
+            <ul class="menu">
+                <li><a href="#Catalog">Каталог</a></li>
+                <li><a href="#Technology">Технологія</a></li>
+                <li><a href="#Cost_calculation">Розрахунок вартості</a></li>
+                <li><a href="#Contacts">Контакти</a></li>
             </ul>
          </nav>
-    </header>
     <p id="logo">
         Швидко Якісно Доступно
     </p>
-    <img src="pictures/прикладбудинку.jpg" alt="приклад будинку" width="600" height="350">
+    </header>
+
     <main>
-            <section id="Каталог">
+            <section id="Catalog">
+            <div class="solo">
             <h1>Каталог</h1>
             <img src="pictures/sekce_solo.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
             <br>
             <p><b>Solo</b>
                 <br>
                 Стандартна конструкційна система виходить з принципу одноповерхового будинку з житловим горищем і кроквяної конструкцією типу spanner.
+            </p>
+            </div>
                 <br>
              <img src="pictures/sekce_nova.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
              <p><b>Nova</b>
@@ -61,7 +64,7 @@
         </section>
     </main>
 
-                <section id="Технологія">
+                <section id="Technology">
                     <h1>Технологія</h1>
          <div>
                Будинки побудовані на базі легкого заводського виготовлення збірних дерев'яних елементів.
@@ -81,57 +84,57 @@
           <div>
                   Така технологія є гарантією великого терміну життя, теплової ізоляції високої якості і надійних протипожежних заходів.
          </div>
-          <img src="pictures/завод.jpg" alt="завод" width="200" height="200">
+          <img src="pictures/factory.jpg" alt="завод, де виготовляють будинки" width="200" height="200">
           <br>
           <h3>Класична технологія</h3>
-          <img src="pictures/класичнатехнологія.gif" alt="класична технологія" width="150" height="100">
+          <img src="pictures/clasictechnology.gif" alt="класична технологія" width="150" height="100">
           <h3>Технологія ПКБ</h3>
-          <img src="pictures/технологіяпкб.gif" alt="технологія пкб" width="150" height="100">
+          <img src="pictures/pcbtechnology.gif" alt="технологія пкб" width="150" height="100">
            <div>
                  Товщина зовнішніх стін при збереженні однакових або кращих Теплово-ізоляційних параметрів становить усього 26,5 см. Цим, в порівнянні з класичною будівництвом, значно заощаджується площа підлоги. У будинку середніх розмірів ця економія при однаковій забудованій території може представляти одне ціле приміщення до того ж!
          </div>
         </section>
-        <section id="Розрахунок_вартості">
+        <section id="Cost_calculation">
                         <h1>Розрахунок вартості</h1>
                         <h4>З допомогою нашого онлайн-розрахунку ви зможете дізнатись попередню оцінку вартості</h4>
-            <label for="загальна_площа">Загальна площа, м2:</label>
-            <input type="text" placeholder="Загальна площа" name="загальна_площа" id="загальна_площа" required>
+            <label for="total_area">Загальна площа, м2:</label>
+            <input type="text" placeholder="Загальна площа" name="total_area" id="total_area" required>
             <br>
-             <label for="комплектація">Комплектація:</label>
-            <select id="комплектація" name="комплектація">
-                <option value="комплектація">Виберіть тип комплектації</option>
-                <option value="база">База</option>
-                <option value="стандарт">Стандарт</option>
-                <option value="преміум">Преміум</option>
-                            </select>
+             <label for="complete">Комплектація:</label>
+            <select id="complete" name="complete">
+                <option value="complete">Виберіть тип комплектації</option>
+                <option value="base">База</option>
+                <option value="standard">Стандарт</option>
+                <option value="premium">Преміум</option>
+            </select>
             <br>
-            <label for="тип_будинку">Тип будинку:</label>
-            <select id="тип_будинку" name="тип_будинку">
-                <option value="тип_будинку">Виберіть тип будинку</option>
+            <label for="type_of_house">Тип будинку:</label>
+            <select id="type_of_house" name="type_of_house">
+                <option value="type_of_house">Виберіть тип будинку</option>
                 <option value="solo">Solo</option>
                 <option value="nova">Nova</option>
                 <option value="dimenze">Dimenze</option>
                 <option value="largo">Largo</option>
                 <option value="kubis">Kubis</option>
                 <option value="city">City</option>
-                            </select>
+            </select>
                             <br>
-            <label for="ваше_ім'я">Ваше ім'я:</label>
-            <input type="text" placeholder="Ваше ім'я" name="ваше_ім'я" id="ваше_ім'я" required>
+            <label for="name">Ваше ім'я:</label>
+            <input type="text" placeholder="Ваше ім'я" name="name" id="name" required>
             <br>
-            <label for="номер_телефону">Номер телефону:</label>
-            <input type="tel" placeholder="Номер телефону" name="номер_телефону" id="номер_телефону" required>
+            <label for="phone_number">Номер телефону:</label>
+            <input type="tel" placeholder="Номер телефону" name="phone_number" id="phone_number" required>
             <br>
             <label for="email">E-mail:</label>
             <input type="text" placeholder="E-mail" name="email" id="email" required>
             <br>
-            <label for="коментар/побажання">Коментар/побажання:</label>
-            <input type="text" placeholder="Коментар/побажання" name="коментар/побажання" id="коментар/побажання" required>
+            <label for="comment_or_wish">Коментар/побажання:</label>
+            <input type="text" placeholder="Коментар/побажання" name="comment_or_wish" id="comment_or_wish" required>
             <br>
               <input type="submit">
               <h3>Компанія «ПКБ груп» запевняє Вас - будівництво нашого будинку - це:</h3>
         </section>
-        <section id="Контакти">
+        <section id="Contacts">
                         <h1>Контакти</h1>
                          <iframe id="map"
             title="Map"
@@ -149,9 +152,9 @@
 <br>
 +380 (50) 378 36 14
 <br>
-<a href="pcb.group.llc@gmail.com">pcb.group.llc@gmail.com</a>
+<a href="pcb.group.llc@gmail.com">pcb.group.llc@gmail.com </a>
 <br>
-    <a href="https://www.facebook.com/profile.php?id=100011436665554">facebook</a>
+    <a href="https://www.facebook.com/profile.php?id=100011436665554"><img src="pictures/facebooklogo.png" alt="іконка facebook"></a>
     </p>
         </section>
 </body>
