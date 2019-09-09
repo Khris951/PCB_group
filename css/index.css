@@ -5,34 +5,30 @@
 }
 
 :root{
-    --font-color: white;
+
     font-family: 'Comfortaa', cursive;
 }
+
 body {
     max-width: 980px;
     margin: auto;
+    }
+main {
+    background-color: #333333;
 }
-
-.content {
-    background-color:#444444;
-}
-
 header{
-    background-color: #808080;
-    color: #ffffff;
-    position: sticky;
+    color:black;
     top: 0;
 }
+
 header nav .menu{
     font-family: 'Comfortaa', cursive;
     font-size: 1rem;
-    margin:1rem 0rem;
     text-transform: uppercase;
     display: flex;
     padding: 0;
     list-style-type: none;
     justify-content: space-around;
-    align-content: center;
 }
 
 header nav .menu li {
@@ -43,9 +39,11 @@ header nav .menu li {
 header nav .menu li a {
     text-decoration: none;
     color: var(--font-color);
-    text-transform: uppercase;
+
 }
 header nav .menu li a:hover {
+    font-weight: 600;
+    text-decoration-line: underline;
 }
 header nav .menu li a:focus {
     font-weight: 600;
@@ -69,30 +67,23 @@ header nav .menu li a:focus {
         grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
-main #logo{
+
+#logo{
     background-image: url(..//img/homeexample.jpg);
     background-position: center;
     background-size: cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-#logo{
+    height: 700px;
     font-size: 4rem;
     color:#444444;
 }
-
-
-
-
-
-
-
-
-
-#largo {
-    display: flex;
-    justify-content: flex-end;
+.title {
+    color: white;
+    padding: 2;
+}
+p {
+    color: white;
+}
+div .sections {
+    display: grid;
+    
 }

@@ -4,41 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+     <link rel="shortcut icon" href="ico/home_icon.ico" type="image/x-icon">
     <title>ПКБ груп</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <div class="content">
      <header>
-             <nav>
-                <ul class="menu">
-                    <li><img src="pictures/emblem.png" alt="емблема компанії" width="50" height="50"></li>
-                    <li><a href="#Catalog">Каталог</a></li>
-                    <li><a href="#Technology">Технологія</a></li>
-                    <li><a href="#Cost_calculation">Розрахунок вартості</a></li>
-                    <li><a href="#Contacts">Контакти</a></li>
-                </ul>
-            </nav>
+            <div id="logo">
+                <nav>
+                    <ul class="menu">
+                        <li><img src="pictures/emblem.png" alt="емблема компанії" width="50" height="50"></li>
+                        <li><a href="#Catalog">Каталог</a></li>
+                        <li><a href="#Technology">Технологія</a></li>
+                        <li><a href="#Cost_calculation">Розрахунок вартості</a></li>
+                        <li><a href="#Contacts">Контакти</a></li>
+                    </ul>
+                </nav>
+            </div>
     </header>
-
     <main>
-            <div id="logo"></div>
             <section id="Catalog">
             <div class="solo">
-            <h1>Каталог</h1>
+            <h1 class="title">Каталог</h1>
+            <div class="sections">
             <img src="pictures/sekce_solo.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
             <br>
-            <p><b>Solo</b>
+            <p id="solo"><b>Solo</b>
                 <br>
                 Стандартна конструкційна система виходить з принципу одноповерхового будинку з житловим горищем і кроквяної конструкцією типу spanner.
             </p>
             </div>
                 <br>
              <img src="pictures/sekce_nova.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
-             <p><b>Nova</b>
+             <p ><b>Nova</b>
                  <br>
+
                 Будинки типу NOVA з'єднують вимоги просторого і комфортабельного житла і помірні витрати на його придбання і оснащення.
              </p>
+            </div>
+            <div class="sections">
             <img src="pictures/sekce_dimenze.jpg" class="projecthouse" alt="будинок типу діменз" width="200" height="200">
              <p><b>Dimenze</b>
                  <br>
@@ -49,22 +54,29 @@
                  <br>
                 Будинки типу LARGO це одноповерхові бунгало в яких немає житлової площі на горищі. Вони створюють природну зону спокою і безбар'єрного внутрішнього простору.
              </p>
+            </div>
+            <div class="sections">
+            </div>
+            <div class="sections">
              <img src="pictures/sekce_kubis.jpg" class="projecthouse" alt="будинок типу кубіс" width="200" height="200">
              <p><b>Kubis</b>
                  <br>
                 Будинки типу KUBIS це двоповерхові будинки з односхилим дахом. Максимальна функціональність, чистота простих ліній і особливий стиль, а також повна житлова площа горища.
              </p>
+            </div>
+            <div class="sections">
              <img src="pictures/sekce_city.jpg" class="projecthouse" alt="будинок типу сіті" width="200" height="200">
              <p><b>City</b>
                  <br>
                 Будинки типу CITY володіють незвичайним дизайном, який, проте, зберігає традиційно довершене рішення внутрішньої диспозиції.
              </p>
+            </div>
 
         </section>
 
 
                 <section id="Technology">
-                    <h1>Технологія</h1>
+                    <h1 class="title">Технологія</h1>
          <div>
                Будинки побудовані на базі легкого заводського виготовлення збірних дерев'яних елементів.
          </div>
@@ -94,7 +106,7 @@
          </div>
         </section>
         <section id="Cost_calculation">
-                        <h1>Розрахунок вартості</h1>
+                        <h1 class="title" >Розрахунок вартості</h1>
                         <h4>З допомогою нашого онлайн-розрахунку ви зможете дізнатись попередню оцінку вартості</h4>
             <label for="total_area">Загальна площа, м2:</label>
             <input type="text" placeholder="Загальна площа" name="total_area" id="total_area" required>
@@ -134,7 +146,7 @@
               <h3>Компанія «ПКБ груп» запевняє Вас - будівництво нашого будинку - це:</h3>
         </section>
         <section id="Contacts">
-                        <h1>Контакти</h1>
+                        <h1 class="title">Контакти</h1>
                          <iframe id="map"
             title="Map"
             width="300"
