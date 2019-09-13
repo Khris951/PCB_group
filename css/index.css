@@ -49,14 +49,7 @@ header nav .menu li a:focus {
     font-weight: 600;
 }
 
-#logo{
-    background-image: url(..//img/homeexample.jpg);
-    background-position: center;
-    background-size: cover;
-    height: 700px;
-    font-size: 4rem;
-    color:#444444;
-}
+
 .title {
     color: white;
     padding: 2;
@@ -229,4 +222,10 @@ div .sections {
 
 .technology > div {
   padding: 20px 0;
+}
+h5 {
+  color: white;
+}
+.info {
+ color: #333333;
 }
