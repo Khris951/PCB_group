@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="icon" href="pictures/favicon.ico" type="image/x-icon">
     <title>ПКБ груп</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
@@ -15,16 +17,58 @@
     <div class="content">
         <header>
             <div id="logo">
-                <nav>
-                    <ul class="menu">
-                        <li><img src="pictures/emblem.png" alt="емблема компанії" width="50" height="50"></li>
-                        <li><a href="#Catalog">Каталог</a></li>
-                        <li><a href="#Technology">Технологія</a></li>
-                        <li><a href="#Cost_calculation">Розрахунок вартості</a></li>
-                        <li><a href="#Contacts">Контакти</a></li>
-                    </ul>
+
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#Catalog">Каталог</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarText">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#Technology">Технологія<span
+                                        class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Cost_calculation">Розрахунок вартості</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#Contacts">Контакти</a>
+                            </li>
+                        </ul>
+                        <span class="navbar-text">
+                            <img src="pictures/emblem.png" width="50" height="50" alt="Приклад будинку">
+                        </span>
+                    </div>
                 </nav>
+            </div>
+            <div id="backgroundimg" class="carousel slide" data-ride="carousel">
                 <div class="clock"></div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/backgroundimg1.jpg" class="d-block w-100" alt="Приклад будинку">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/backgroundimg2.jpg" class="d-block w-100" alt="Приклад будинку">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/backgroundimg3.jpg" class="d-block w-100" alt="Приклад будинку">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </header>
         <main>
@@ -32,55 +76,69 @@
                 <h1 class="title">Каталог</h1>
                 <div class="grid-container">
                     <div class="sections">
-                        <img src="pictures/sekce_solo.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
-                        <p class="namehouse"><b>Solo</b></p>
-                        <p class="description">
-                            Стандартна конструкційна система виходить з принципу одноповерхового будинку з житловим
-                            горищем і кроквяної конструкцією типу spanner.
-                        </p>
+                        <img src="pictures/sekce_solo.jpg" class="card-img-top" alt="будинок типу соло">
+                        <div class="card-body">
+                            <h5 class="card-title">Solo</h5>
+                            <p class="card-text">Стандартна конструкційна система виходить з принципу одноповерхового
+                                будинку з житловим
+                                горищем і кроквяної конструкцією типу spanner.</p>
+                            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#housesolo">Збільшити</a>
+                        </div>
                     </div>
                     <div class="sections">
-                        <img src="pictures/sekce_nova.jpg" class="projecthouse" alt="будинок типу соло" width="200" height="200">
-                        <p class="namehouse"><b>Nova</b></p>
-                        <p class="description">
-                            Будинки типу NOVA з'єднують вимоги просторого і комфортабельного житла і помірні витрати на
-                            його
-                            придбання і оснащення.
-                        </p>
+                        <img src="pictures/sekce_nova.jpg" class="card-img-top" alt="будинок типу нова">
+                        <div class="card-body">
+                            <h5 class="card-title">Nova</h5>
+                            <p class="card-text">Будинки типу NOVA з'єднують вимоги просторого і комфортабельного житла
+                                і помірні витрати на
+                                його
+                                придбання і оснащення.</p>
+                            <a href="#" class="btn btn-primary">Збільшити</a>
+                        </div>
                     </div>
                     <div class="sections">
-                        <img src="pictures/sekce_dimenze.jpg" class="projecthouse" alt="будинок типу діменз" width="200" height="200">
-                        <p class="namehouse"><b>Dimenze</b></p>
-                        <p class="description"> Будинки типу DIMENZE є сучасними проектами будинку з цікавим інтер'єром і незвичайним
-                            рішенням
-                            повітряного холу на першому поверсі та вражаючим горищем, освіченим даховими вікнами під
-                            кутом.
-                        </p>
+                        <img src="pictures/sekce_dimenze.jpg" class="card-img-top" alt="будинок типу Dimenze">
+                        <div class="card-body">
+                            <h5 class="card-title">Dimenze</h5>
+                            <p class="card-text"> Будинки типу DIMENZE є сучасними проектами будинку з цікавим
+                                інтер'єром
+                                і незвичайним
+                                рішенням
+                                повітряного холу на першому поверсі та вражаючим горищем, освіченим даховими вікнами під
+                                кутом.</p>
+                            <a href="#" class="btn btn-primary">Збільшити</a>
+                        </div>
                     </div>
                     <div class="sections">
-                        <img src="pictures/sekce_largo.jpg" class="projecthouse" alt="будинок типу ларго" width="200" height="200">
-                        <p class="namehouse"><b>Largo</b></p>
-                        <p class="description">
-                            Будинки типу LARGO це одноповерхові бунгало в яких немає житлової площі на горищі. Вони
-                            створюють природну зону спокою і безбар'єрного внутрішнього простору.
-                        </p>
+                        <img src="pictures/sekce_largo.jpg" class="card-img-top" alt="будинок типу largo">
+                        <div class="card-body">
+                            <h5 class="card-title">Largo</h5>
+                            <p class="card-text"> Будинки типу LARGO це одноповерхові бунгало в яких немає житлової
+                                площі на горищі. Вони
+                                створюють природну зону спокою і безбар'єрного внутрішнього простору.</p>
+                            <a href="#" class="btn btn-primary">Збільшити</a>
+                        </div>
                     </div>
                     <div class="sections">
-                        <img src="pictures/sekce_kubis.jpg" class="projecthouse" alt="будинок типу кубіс" width="200" height="200">
-                        <p class="namehouse"><b>Kubis</b></p>
-                        <p class="description">
-                            Будинки типу KUBIS це двоповерхові будинки з односхилим дахом. Максимальна функціональність,
-                            чистота простих ліній і особливий стиль, а також повна житлова площа горища.
-                        </p>
+                        <img src="pictures/sekce_kubis.jpg" class="card-img-top" alt="будинок типу Kubis">
+                        <div class="card-body">
+                            <h5 class="card-title">Kubis</h5>
+                            <p class="card-text">Будинки типу KUBIS це двоповерхові будинки з односхилим дахом.
+                                Максимальна функціональність,
+                                чистота простих ліній і особливий стиль, а також повна житлова площа горища.</p>
+                            <a href="#" class="btn btn-primary">Збільшити</a>
+                        </div>
                     </div>
                     <div class="sections">
-                        <img src="pictures/sekce_city.jpg" class="projecthouse" alt="будинок типу сіті" width="200" height="200">
-                        <p class="namehouse"><b>City</b></p>
-                        <p class="description"> Будинки типу CITY володіють незвичайним дизайном, який, проте, зберігає традиційно довершене
-                            рішення внутрішньої диспозиції.
-                        </p>
+                        <img src="pictures/sekce_city.jpg" class="card-img-top" alt="будинок типу Kubis">
+                        <div class="card-body">
+                            <h5 class="card-title">City</h5>
+                            <p class="card-text">Будинки типу CITY володіють незвичайним дизайном, який, проте, зберігає
+                                традиційно довершене
+                                рішення внутрішньої диспозиції.</p>
+                            <a href="#" class="btn btn-primary">Збільшити</a>
+                        </div>
                     </div>
-                </div>
             </section>
             <section id="Technology">
                 <h1 class="title">Технологія</h1>
@@ -96,7 +154,8 @@
                         європейським стандартам.
                     </div>
                     <div class="technologytext">
-                        Будинки відрізняються економією свого використання витікає з якісної теплової ізоляції зовнішніх і
+                        Будинки відрізняються економією свого використання витікає з якісної теплової ізоляції зовнішніх
+                        і
                         стельових конструкцій.
                     </div>
                     <div class="technologytext">
@@ -109,7 +168,7 @@
                     </div>
                 </div>
                 <img src="pictures/factory.jpg" alt="завод, де виготовляють будинки" width="200" height="200">
-                
+
                 <h3>Класична технологія</h3>
                 <img src="pictures/clasictechnology.gif" alt="класична технологія" width="150" height="100">
                 <h3>Технологія ПКБ</h3>
@@ -126,7 +185,7 @@
                 <h4>З допомогою нашого онлайн-розрахунку ви зможете дізнатись попередню оцінку вартості</h4>
                 <label for="total_area">Загальна площа, м2:</label>
                 <input type="text" placeholder="Загальна площа" name="total_area" id="total_area" required>
-                
+
                 <label for="complete">Комплектація:</label>
                 <select id="complete" name="complete">
                     <option value="complete">Виберіть тип комплектації</option>
@@ -134,7 +193,7 @@
                     <option value="standard">Стандарт</option>
                     <option value="premium">Преміум</option>
                 </select>
-                
+
                 <label for="type_of_house">Тип будинку:</label>
                 <select id="type_of_house" name="type_of_house">
                     <option value="type_of_house">Виберіть тип будинку</option>
@@ -145,20 +204,20 @@
                     <option value="kubis">Kubis</option>
                     <option value="city">City</option>
                 </select>
-                
+
                 <label for="name">Ваше ім'я:</label>
                 <input type="text" placeholder="Ваше ім'я" name="name" id="name" required>
-                
+
                 <label for="phone_number">Номер телефону:</label>
                 <input type="tel" placeholder="Номер телефону" name="phone_number" id="phone_number" required>
-                
+
                 <label for="email">E-mail:</label>
                 <input type="text" placeholder="E-mail" name="email" id="email" required>
-                
+
                 <label for="comment_or_wish">Коментар/побажання:</label>
                 <input type="text" placeholder="Коментар/побажання" name="comment_or_wish" id="comment_or_wish"
                     required>
-                
+
                 <input type="submit">
                 <h3>Компанія «ПКБ груп» запевняє Вас - будівництво нашого будинку - це:</h3>
             </section>
@@ -166,25 +225,75 @@
                 <h1 class="title">Контакти</h1>
                 <iframe id="map" title="Map" width="300" height="200" src="https://goo.gl/maps/SR2AeLjwyUkC6Yyj9">
                 </iframe>
-                
+
                 <p>ТОВ "ПКБ Груп" вул. Промислова,5. с.Жорниська
-                    
+
 
                     81082
-                    
+
                     +380 (67) 590 83 79
-                    
+
                     +380 (50) 378 36 14
-                    
+
                     <a href="pcb.group.llc@gmail.com">pcb.group.llc@gmail.com </a>
-                    
+
                     <a href="https://www.facebook.com/profile.php?id=100011436665554"><img
                             src="pictures/facebooklogo.png" alt="іконка facebook"></a>
                 </p>
             </section>
         </main>
     </div>
-    <script src="index.js"></script>
+
+
+
+
+
+
+<!-- Modal -->
+    <div class="modal fade" id="housesolo" tabindex="-1" role="dialog" aria-labelledby="housesoloModalScrollableTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="housesoloModalScrollableTitle">Sogo</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <img src="pictures/solo_105_06.jpg" alt="Будинок типу Solo">
+                  <p class="info">Односімейний будинок цікавий своєю компоновкою, що пропонує своїм рішенням високий стандарт житла. Завдяки квадратної плануванні цей будинок є універсальним в його розташуванні щодо сторін світу. Його комфортабельність підвищується наявністю тамбура, який є стандартною складовою частиною цього типу.</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
